@@ -788,6 +788,27 @@ nav.main-nav {
 }
 .like-btn svg { width: 14px; height: 14px; }
 
+.download-btn {
+  background: transparent;
+  border: 1px solid var(--brass);
+  color: var(--ink-dim);
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.download-btn:hover {
+  border-color: var(--gold);
+  color: var(--terracotta);
+  background: rgba(195,135,63,0.12);
+  transform: translateY(-1px);
+}
+.download-btn svg { width: 14px; height: 14px; }
+
 .empty-room {
   text-align: center;
   padding: 72px 24px;
@@ -1330,6 +1351,34 @@ nav.main-nav {
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.lightbox .lb-actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.lightbox .lb-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  font-size: 13px;
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.lightbox .lb-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(195,135,63,0.4);
+}
+.lightbox .lb-download svg {
+  width: 15px;
+  height: 15px;
 }
 .lightbox .lb-close {
   position: absolute;
