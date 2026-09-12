@@ -214,5 +214,29 @@
     "weekAcquired": "2026-W37",
     "likes": 0,
     "featured": false
+  },
+  {
+    "id": "son-issue-1",
+    "filename": "pneumonoultramicroscopicsilicovolcanocosonsis-1.webp",
+    "src": "images/sons/pneumonoultramicroscopicsilicovolcanocosonsis-1.webp",
+    "title": "pneumonoultramicroscopicsilicovolcanocoSONsis",
+    "contributor": "maybenotnxrth",
+    "section": "Rare & Obscure Annex",
+    "dateAdded": "2026-09-12T03:54:29.525Z",
+    "weekAcquired": "2026-W37",
+    "likes": 0,
+    "featured": false
+  },
+  {
+    "id": "son-issue-2",
+    "filename": "son-papdi-2.jpg",
+    "src": "images/sons/son-papdi-2.jpg",
+    "title": "SON papdi",
+    "contributor": "maybenotnxrth",
+    "section": "The Food Court",
+    "dateAdded": "2026-09-12T03:54:37.342Z",
+    "weekAcquired": "2026-W37",
+    "likes": 0,
+    "featured": false
   }
 ]

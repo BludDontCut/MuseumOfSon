@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     url.searchParams.set("title", title);
     if (contributor) url.searchParams.set("contributor", contributor);
     url.searchParams.set("section", section);
+    url.searchParams.set("labels", "contribution");
 
     window.open(url.toString(), "_blank", "noopener");
     status.innerHTML = `Opening GitHub — <strong>drag your image into the Image box</strong> there (the fields below are pre-filled for you), then click "Submit new issue." It'll appear on the wall within a minute or two.`;
