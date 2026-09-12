@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Museum of SON</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">MUSEUM OF SON<small>Est. This Year · Permanent Collection</small></a>
+    <nav class="main-nav">
+      <div class="nav-item"><a href="index.html">Galleries</a></div>
+      <div class="nav-item"><a href="hall-of-fame.html">Hall of Fame</a></div>
+      <div class="nav-item"><a href="contribute.html">Contribute</a></div>
+      <div class="nav-item"><a href="about.html">About</a></div>
+    </nav>
+    <div class="visitor-plaque">
+      <span class="dot"></span>
+      <span class="label">Visitors to date</span>
+      <strong id="visitor-count">—</strong>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="about-body">
+    <h1>About the Museum</h1>
+    <p>The Museum of SON exists for one reason: the Son meme deserves the same institutional dignity as any other major work of art. Marble pedestals, brass plaques, hushed reverence — all of it, for a joke image.</p>
+    <p>Every piece in the permanent collection was donated by a visitor, hung automatically, and left for the public to judge — literally, by clicking the heart under each frame.</p>
+
+    <h2 id="ranking">How the Rankings Work</h2>
+    <p>Every like you cast counts twice: once toward that piece's all-time total (shown under every frame and on the Leaderboard), and once toward its tally for the current calendar week (Monday–Sunday).</p>
+    <p>Each Monday, whichever piece led the week's tally is sealed into the permanent Weekly Archive — a running record of every Curator's Choice there's ever been. The current week's leader is shown live in the Hall of Fame's Velvet Room.</p>
+    <p>You can like each piece once. The museum is honor-system only — there's no login, so it's not vote-proof, but it hasn't needed to be yet.</p>
+
+    <h2>Visitor Count</h2>
+    <p>The number in the header ticks up once per visit, live, across everyone currently looking at the site — not just you.</p>
+  </div>
+</div>
+
+<footer class="simple">
+  <div class="foot-wordmark">MUSEUM OF SON</div>
+  <p><a href="index.html">Galleries</a> · <a href="hall-of-fame.html">Hall of Fame</a> · <a href="contribute.html">Contribute</a></p>
+</footer>
+
+<script src="js/counter.js"></script>
+<script src="js/shared.js"></script>
+<script>document.addEventListener("DOMContentLoaded", () => bumpVisitorCounter(document.getElementById("visitor-count")));</script>
+</body>
+</html>

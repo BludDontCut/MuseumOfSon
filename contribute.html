@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contribute — Museum of SON</title>
+<meta name="description" content="Donate a Son meme to the permanent collection.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">MUSEUM OF SON<small>Est. This Year · Permanent Collection</small></a>
+    <nav class="main-nav">
+      <div class="nav-item"><a href="index.html">Galleries</a></div>
+      <div class="nav-item"><a href="hall-of-fame.html">Hall of Fame</a></div>
+      <div class="nav-item"><a href="contribute.html">Contribute</a></div>
+      <div class="nav-item">
+        <button type="button">About <svg class="chev" width="10" height="10" viewBox="0 0 10 10"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></button>
+        <div class="dropdown">
+          <a href="about.html">About the Museum</a>
+          <a href="about.html#ranking">How the Rankings Work</a>
+        </div>
+      </div>
+    </nav>
+    <div class="visitor-plaque">
+      <span class="dot"></span>
+      <span class="label">Visitors to date</span>
+      <strong id="visitor-count">—</strong>
+    </div>
+  </div>
+</header>
+
+<section class="acquisitions">
+  <div class="wrap">
+    <div class="intro">
+      <h1>Donate a Work</h1>
+      <p>The acquisitions committee (an automated one, staffed entirely by GitHub Actions) reviews nothing and rejects nobody. Fill this out, and your piece is on the wall within minutes.</p>
+    </div>
+
+    <div class="desk">
+      <div class="field">
+        <label for="title-input">Title</label>
+        <input type="text" id="title-input" placeholder="e.g. Son at the DMV" maxlength="80">
+      </div>
+      <div class="field">
+        <label for="contributor-input">Your name or handle (optional)</label>
+        <input type="text" id="contributor-input" placeholder="e.g. jane_doe" maxlength="40">
+      </div>
+      <div class="field">
+        <label for="section-select">Gallery section</label>
+        <select id="section-select">
+          <option>General Collection</option>
+          <option>The Food Court</option>
+          <option>The Classics Wing</option>
+          <option>Anime Annex</option>
+          <option>The Motor Garage</option>
+          <option>Pop Culture Parlor</option>
+          <option>Digital Wing</option>
+          <option>Family Room</option>
+          <option>The Scenic Room</option>
+          <option>Internet Culture Vault</option>
+          <option>Contemporary Remix Room</option>
+          <option>Rare &amp; Obscure Annex</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Image</label>
+        <div class="dropzone" id="dropzone">
+          <div id="dz-text"><strong>Click to choose</strong> or drag a PNG/JPG here</div>
+          <img id="preview" class="preview" style="display:none;" alt="Preview of your submission">
+        </div>
+        <input type="file" id="file-input" accept="image/png,image/jpeg,image/webp" hidden>
+      </div>
+
+      <button class="btn btn-gold" id="submit-btn" style="width:100%;">Submit to the Collection</button>
+      <div class="status-msg" id="status-msg"></div>
+
+      <p class="form-note">
+        This opens a pre-filled submission on GitHub, where you'll drag your image into the last box —
+        GitHub hosts the file, and a bot hangs it on the wall automatically. No account needed to browse
+        the museum, but submitting requires a free GitHub account (it's how the collection stays spam-free
+        without a human moderator).
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="simple">
+  <div class="foot-wordmark">MUSEUM OF SON</div>
+  <p>A gallery for the internet's most dedicated art form. Curated by everyone.<br>
+  <a href="index.html">Galleries</a> · <a href="hall-of-fame.html">Hall of Fame</a> · <a href="about.html">About</a></p>
+</footer>
+
+<script src="js/counter.js"></script>
+<script src="js/shared.js"></script>
+<script src="js/contribute.js"></script>
+</body>
+</html>

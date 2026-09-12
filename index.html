@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Museum of SON — A Permanent Collection</title>
+<meta name="description" content="The world's foremost gallery dedicated to the Son meme. Browse the permanent collection, visit this week's Hall of Fame, and donate a work of your own.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">MUSEUM OF SON<small>Est. This Year · Permanent Collection</small></a>
+
+    <nav class="main-nav">
+      <div class="nav-item">
+        <button type="button">Galleries <svg class="chev" width="10" height="10" viewBox="0 0 10 10"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></button>
+        <div class="dropdown" id="nav-galleries-list">
+          <a href="#">Loading rooms…</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="hall-of-fame.html">Hall of Fame</a>
+      </div>
+      <div class="nav-item">
+        <a href="contribute.html">Contribute</a>
+      </div>
+      <div class="nav-item">
+        <button type="button">About <svg class="chev" width="10" height="10" viewBox="0 0 10 10"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></button>
+        <div class="dropdown">
+          <a href="about.html">About the Museum</a>
+          <a href="about.html#ranking">How the Rankings Work</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">Source on GitHub</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="visitor-plaque">
+      <span class="dot"></span>
+      <span class="label">Visitors to date</span>
+      <strong id="visitor-count">—</strong>
+    </div>
+  </div>
+</header>
+
+<!-- TICKER / ARCHIVAL STATUS BAR -->
+<div class="ticker-bar">
+  <div class="wrap">
+    <div class="ticker-left">
+      <span class="ticker-dot"></span>
+      <span class="ticker-label">Registry Dispatch: Autumn MMXXVI Quarterly Survey</span>
+    </div>
+    <div class="ticker-stats">
+      <span>Current Exhibit: "The Son Canon"</span>
+      <span class="ticker-sep">•</span>
+      <span>All Wings Active</span>
+    </div>
+    <span class="ticker-ref">[Ledger Sec. 18-C]</span>
+  </div>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="eyebrow">The National Repository of Son · Est. This Year</p>
+      <h1>The world's most rigorously<br>curated collection of <em>Son</em>.</h1>
+      <p class="lede">Every piece hung with the same reverence the Louvre gives the Mona Lisa, because it deserves nothing less. Browse the galleries, cast a vote, and see who takes the pedestal this week.</p>
+      <div class="cta-row">
+        <a href="#gallery-rooms" class="btn btn-gold">Enter the Galleries</a>
+        <a href="contribute.html" class="btn btn-outline">Donate a Work</a>
+        <span class="access-tier">[Access Tier: Public Archive]</span>
+      </div>
+
+      <!-- Curatorial Metrics -->
+      <div class="hero-metrics" id="hero-metrics">
+        <div class="hero-metric">
+          <div class="metric-value" id="metric-pieces">—</div>
+          <div class="metric-label">Preserved Works</div>
+        </div>
+        <div class="hero-metric">
+          <div class="metric-value">100%</div>
+          <div class="metric-label">Unironic Dignity</div>
+        </div>
+        <div class="hero-metric">
+          <div class="metric-value">24/7</div>
+          <div class="metric-label">Gallery Hours</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frontispiece Card (desktop) -->
+    <div class="hero-frontispiece" id="hero-frontispiece">
+      <div class="frontispiece-inner">
+        <div id="frontispiece-img-slot" style="aspect-ratio: 3/4; background: #1f3327; display: flex; align-items: center; justify-content: center;">
+          <span style="color: #b9c9b8; font-family: var(--serif); font-style: italic; font-size: 13px;">Loading…</span>
+        </div>
+        <div class="frontispiece-caption">
+          <span class="fc-label">[Folio Frontispiece MMXXVI]</span>
+          <h3 id="frontispiece-title">—</h3>
+          <p id="frontispiece-meta">—</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORNAMENTAL DIVIDER -->
+<div class="ornament-divider">
+  <div class="ornament-line"></div>
+  <span class="ornament-text">Exhibition Galleries Open to Patrons</span>
+  <div class="ornament-line"></div>
+</div>
+
+<!-- GALLERY ROOMS (rendered by js/app.js) -->
+<div id="gallery-rooms">
+  <section class="gallery-room">
+    <div class="wrap">
+      <div class="empty-room"><h3>Hanging the collection…</h3></div>
+    </div>
+  </section>
+</div>
+
+<!-- HALL OF FAME ALCOVE -->
+<section class="hof-alcove" id="hall-of-fame">
+  <div class="wrap">
+    <p class="eyebrow">Sanctum Sanctorum</p>
+    <h2>This Week's Hall of Fame</h2>
+    <div id="hof-slot">
+      <p class="week-range">Tallying votes…</p>
+    </div>
+    <div class="rope"></div>
+    <p style="margin-top:24px;"><a href="hall-of-fame.html" class="btn btn-outline">View the Full Archive</a></p>
+  </div>
+</section>
+
+<!-- PATRON TESTIMONIALS -->
+<section class="testimonials">
+  <div class="wrap">
+    <div class="testimonials-header">
+      <span class="eyebrow-text">Patron Depositions · Sworn Under Meme Oath</span>
+      <h3>"I Came For a Joke. I Left Spiritually Transformed."</h3>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <blockquote>"I showed my therapist the Son meme and she said 'we're done here, you've found inner peace.' This museum just gave it a frame. I'm literally crying in a gallery right now."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar bg-green">B</div>
+          <div>
+            <div class="testimonial-name">BigSonEnergy_42</div>
+            <div class="testimonial-role">Self-Appointed Son Evangelist · 14k Reddit Karma</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"My wife left me because I changed our wedding photo to the Son meme. She said 'it's me or Son.' Anyway, I live here now. The WiFi is excellent and the frames are gilded."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar bg-terracotta">D</div>
+          <div>
+            <div class="testimonial-name">DivorcedBySon</div>
+            <div class="testimonial-role">Permanent Museum Resident · Gallery Wing 3, Cot 7</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <blockquote>"I have a PhD in Art History from Yale. I have published 47 peer-reviewed papers. None of them hit as hard as seeing 'Sonday' hung in a gilded frame between a pug and an onion. I'm reconsidering everything."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar bg-gold">P</div>
+          <div>
+            <div class="testimonial-name">Prof. Sonathan McFrameface</div>
+            <div class="testimonial-role">Dept. of Shitpost Archaeology · Oxford (Unverified)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top-line"></div>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <span class="footer-col-label">Archival Institution</span>
+        <h4>Museum of Son</h4>
+        <p>Dedicated to the rigorous historicization, physical conservation, and taxonomical preservation of the Son meme in all its glorious forms.</p>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Rooms & Folios</span>
+        <ul>
+          <li><a href="index.html">The Galleries</a></li>
+          <li><a href="hall-of-fame.html">Hall of Canonized Ephemera</a></li>
+          <li><a href="contribute.html">Donate a Work</a></li>
+          <li><a href="about.html">About the Museum</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Curatorial Inquiries</span>
+        <p>General Acquisitions & Contributions:</p>
+        <p class="contact-email" style="margin-top:4px;">curator@museumofson.org</p>
+        <p style="margin-top:12px;">Specimen Mounting & Display:</p>
+        <p class="contact-email" style="margin-top:4px;">provenance@museumofson.org</p>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Preservation Society</span>
+        <p>Contributions support climate-controlled server vaults and offline backup containment for generational permanence.</p>
+        <div class="footer-registry-badge">Folio Registry N° 849-B</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© MMXXVI Museum of Son Archival Trust. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="about.html">Provenance Index</a>
+        <span class="sep">·</span>
+        <a href="about.html">Conservation Protocol</a>
+        <span class="sep">·</span>
+        <a href="contribute.html">Accession Charter</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING PARTICLES -->
+<canvas class="particles-canvas" id="particles-canvas"></canvas>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <div class="lightbox-inner">
+    <img src="" alt="">
+    <div class="lb-title"></div>
+    <div class="lb-meta"></div>
+  </div>
+</div>
+
+<script src="js/counter.js"></script>
+<script src="js/shared.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+

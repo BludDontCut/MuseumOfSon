@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hall of Fame — Museum of SON</title>
+<meta name="description" content="This week's leading Son meme, the all-time leaderboard, and the full weekly archive.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">MUSEUM OF SON<small>Est. This Year · Permanent Collection</small></a>
+    <nav class="main-nav">
+      <div class="nav-item"><a href="index.html">Galleries</a></div>
+      <div class="nav-item"><a href="hall-of-fame.html">Hall of Fame</a></div>
+      <div class="nav-item"><a href="contribute.html">Contribute</a></div>
+      <div class="nav-item">
+        <button type="button">About <svg class="chev" width="10" height="10" viewBox="0 0 10 10"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></button>
+        <div class="dropdown">
+          <a href="about.html">About the Museum</a>
+          <a href="about.html#ranking">How the Rankings Work</a>
+        </div>
+      </div>
+    </nav>
+    <div class="visitor-plaque">
+      <span class="dot"></span>
+      <span class="label">Visitors to date</span>
+      <strong id="visitor-count">—</strong>
+    </div>
+  </div>
+</header>
+
+<section class="hof-alcove" id="hall-of-fame">
+  <div class="wrap">
+    <p class="eyebrow">Sanctum Sanctorum</p>
+    <h2>This Week's Hall of Fame</h2>
+    <div id="hof-slot"><p class="week-range">Tallying votes…</p></div>
+    <div class="rope"></div>
+  </div>
+</section>
+
+<section class="leaderboard-section">
+  <div class="wrap">
+    <h2>All-Time Leaderboard</h2>
+    <p>The ten most-loved pieces in the entire collection, ranked by total likes ever cast.</p>
+    <ol id="leaderboard"></ol>
+  </div>
+</section>
+
+<section class="history-section">
+  <div class="wrap">
+    <h2>Weekly Archive</h2>
+    <p>Every past week's Curator's Choice, preserved for posterity. A new plaque is added automatically each Monday.</p>
+    <div class="history-grid" id="history-list"></div>
+  </div>
+</section>
+
+<footer class="simple">
+  <div class="foot-wordmark">MUSEUM OF SON</div>
+  <p>A gallery for the internet's most dedicated art form. Curated by everyone.<br>
+  <a href="contribute.html">Donate a work</a> · <a href="about.html">About</a> · <a href="index.html">Galleries</a></p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <div class="lightbox-inner">
+    <img src="" alt="">
+    <div class="lb-title"></div>
+    <div class="lb-meta"></div>
+  </div>
+</div>
+
+<script src="js/counter.js"></script>
+<script src="js/shared.js"></script>
+<script src="js/hof.js"></script>
+</body>
+</html>

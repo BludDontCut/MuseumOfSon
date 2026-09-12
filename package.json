@@ -1,0 +1,10 @@
+{
+  "name": "museum-of-son",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A gallery for the Son meme.",
+  "scripts": {
+    "generate-manifest": "node scripts/generate-manifest.js",
+    "snapshot-hof": "node scripts/snapshot-hall-of-fame.js"
+  }
+}

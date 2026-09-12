@@ -1,0 +1,59 @@
+name: "🖼️ Contribute a Son"
+description: "Donate a Son meme to the permanent collection"
+title: "[Contribution]: "
+labels: ["contribution"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for donating to the collection! Fill this out and a
+        curator (a GitHub Action, honestly) will hang it on the wall
+        automatically within a minute or two.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: What should we call this piece?
+      placeholder: "e.g. Son at the DMV"
+    validations:
+      required: true
+  - type: input
+    id: contributor
+    attributes:
+      label: Your name or handle
+      description: How should we credit you on the plaque?
+      placeholder: "e.g. jane_doe"
+    validations:
+      required: false
+  - type: dropdown
+    id: section
+    attributes:
+      label: Gallery section
+      description: Where does this belong? (Not sure? Leave the default.)
+      options:
+        - General Collection
+        - The Food Court
+        - The Classics Wing
+        - Anime Annex
+        - The Motor Garage
+        - Pop Culture Parlor
+        - Digital Wing
+        - Family Room
+        - The Scenic Room
+        - Internet Culture Vault
+        - Contemporary Remix Room
+        - Rare & Obscure Annex
+      default: 0
+    validations:
+      required: false
+  - type: textarea
+    id: image
+    attributes:
+      label: Image
+      description: >-
+        Click inside this box, then drag your PNG/JPG in (or paste it).
+        GitHub will upload it and drop a link here — leave that as the
+        only thing in the box.
+      placeholder: (drag image here)
+    validations:
+      required: true

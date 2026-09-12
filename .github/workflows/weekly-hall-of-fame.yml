@@ -1,0 +1,33 @@
+name: Weekly Hall of Fame snapshot
+
+on:
+  schedule:
+    # 00:10 UTC every Monday — just after the ISO week rolls over
+    - cron: "10 0 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Snapshot last week's winner
+        run: node scripts/snapshot-hall-of-fame.js
+
+      - name: Commit history
+        run: |
+          git config user.name "museum-curator[bot]"
+          git config user.email "actions@github.com"
+          git add data/hall-of-fame-history.json
+          git diff --cached --quiet || git commit -m "Snapshot Hall of Fame winner"
+          git push
