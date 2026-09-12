@@ -9,7 +9,7 @@
  * Example:
  *   const WORKER_URL = "https://museum-of-son-donate.sanidhya.workers.dev";
  */
-const WORKER_URL = "";
+const WORKER_URL = "https://museum-of-son-donate.sanidhyalabh139.workers.dev";
 
 // Fallback GitHub repository for issue submissions:
 const REPO = "BludDontCut/MuseumOfSon";
