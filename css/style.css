@@ -1281,6 +1281,9 @@ nav.main-nav {
 .status-msg.show { display: block; }
 .status-msg.ok { background: rgba(86,112,92,0.14); color: #2f4a37; border: 1px solid #56705c; }
 .status-msg.err { background: rgba(173,91,65,0.14); color: #7a3323; border: 1px solid #ad5b41; }
+.status-msg.info { background: rgba(195,135,63,0.14); color: #824f1c; border: 1px solid var(--brass); }
+.status-msg a { color: inherit; text-decoration: underline; font-weight: 600; }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
 
 /* -------------------------------------------------- lightbox -- */
 
