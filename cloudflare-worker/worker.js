@@ -225,6 +225,15 @@ export default {
         sha: newCommit.sha,
       });
 
+      // Step J: Dispatch GitHub Pages deployment
+      try {
+        await githubRequest(`${apiBase}/actions/workflows/static.yml/dispatches`, "POST", token, {
+          ref: branch,
+        });
+      } catch (dispErr) {
+        console.warn("Could not dispatch static.yml deployment:", dispErr.message);
+      }
+
       return jsonResponse({
         success: true,
         message: "Your donation has been added to the museum!",
