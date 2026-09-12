@@ -238,5 +238,17 @@
     "weekAcquired": "2026-W37",
     "likes": 0,
     "featured": false
+  },
+  {
+    "id": "son-issue-3",
+    "filename": "sonshine-3.jpg",
+    "src": "images/sons/sonshine-3.jpg",
+    "title": "SonShine",
+    "contributor": "garethdontmeth",
+    "section": "General Collection",
+    "dateAdded": "2026-09-12T04:01:24.319Z",
+    "weekAcquired": "2026-W37",
+    "likes": 0,
+    "featured": false
   }
 ]
