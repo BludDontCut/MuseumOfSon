@@ -310,5 +310,17 @@
     "weekAcquired": "2026-W37",
     "likes": 0,
     "featured": false
+  },
+  {
+    "id": "son-web-mtzib4ai",
+    "filename": "sonwich-mtzib4ai.jpg",
+    "src": "images/sons/sonwich-mtzib4ai.jpg",
+    "title": "SONwich",
+    "contributor": "Ozzie",
+    "section": "The Food Court",
+    "dateAdded": "2026-09-13T07:42:45.882Z",
+    "weekAcquired": "2026-W37",
+    "likes": 0,
+    "featured": false
   }
 ]
