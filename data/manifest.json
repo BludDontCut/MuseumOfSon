@@ -298,5 +298,17 @@
     "weekAcquired": "2026-W37",
     "likes": 0,
     "featured": false
+  },
+  {
+    "id": "son-web-mtzi90zt",
+    "filename": "sonami-mtzi90zt.jpg",
+    "src": "images/sons/sonami-mtzi90zt.jpg",
+    "title": "SONami",
+    "contributor": "Ozzie",
+    "section": "The Scenic Room",
+    "dateAdded": "2026-09-13T07:41:08.297Z",
+    "weekAcquired": "2026-W37",
+    "likes": 0,
+    "featured": false
   }
 ]
